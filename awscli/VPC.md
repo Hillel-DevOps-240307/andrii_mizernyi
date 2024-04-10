@@ -1,13 +1,3 @@
-<details>
-<summary>Example results</summary>
-
-```
-
-```
-
-</details>
-
-
 ## Variables
 
 - $VPC_ID
@@ -25,24 +15,6 @@
 - $PATH_TO_DevOps_HW2_KEY
 - $BACK_SERVER_ID
 - $BACK_PRIVATE_IP
-
-```bash
-export VPC_ID=vpc-00d11f2a3ece7a83a
-export AMI_ID=ami-097c96b8f62c131c5
-export WEB_SUBNET_ID=subnet-04865e01349a96564
-export DB_SUBNET_ID=subnet-01cf9212075362736
-export IGW_ID=igw-0d824fe3cad2aa75b
-export GW_RT_ID=rtb-08e52422875da64e6
-export LOCAL_RT_ID=rtb-002c2611a2fd3c94a
-export FRONT_SG_ID=sg-0eb626eb6aec62c0d
-export BACK_SG_ID=sg-097ff9526be0579c5
-export FRONT_SERVER_ID=i-08cbbed739d0b899f
-export BACKEND_IMG_ID=ami-054cb0bb51e4c0d45
-export FRONT_PUBLIC_IP=18.199.172.253
-export PATH_TO_DevOps_HW2_KEY=$(realpath DevOps_HW2_KEY.pem)
-export BACK_SERVER_ID=i-04f4cf5f89c2e26e8
-export BACK_PRIVATE_IP=192.168.0.95
-```
 
 ## VPC creation
 
