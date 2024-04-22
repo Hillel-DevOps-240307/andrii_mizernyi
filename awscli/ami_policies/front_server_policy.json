@@ -14,7 +14,7 @@
 				"ssm:GetParameter",
 				"ssm:GetParameters"
 			],
-			"Resource": "arn:aws:ssm:eu-central-1::parameter/hw-3/db/*"
+			"Resource": "arn:aws:ssm:eu-central-1:<your-owner-id>:parameter/hw-3/db/*"
 		}
 	]
 }
