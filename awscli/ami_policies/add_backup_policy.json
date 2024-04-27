@@ -1,0 +1,27 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject"
+            ],
+            "Resource": "*"
+        },
+        		{
+			"Effect": "Allow",
+			"Action": [
+				"ssm:DescribeParameters"
+			],
+			"Resource": "*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"ssm:GetParameter",
+				"ssm:GetParameters"
+			],
+			"Resource": "arn:aws:ssm:eu-central-1:<your-owner-id>:parameter/devops-hw-4/db/*"
+		}
+    ]
+}
