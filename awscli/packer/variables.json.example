@@ -1,0 +1,7 @@
+// Simple variables.json with last Ubuntu 22.04 in "eu-central-1" region
+
+{
+  "instance_size": "t2.micro",
+  "region": "eu-central-1",
+  "base_ami": "ami-026c3177c9bd54288"
+}

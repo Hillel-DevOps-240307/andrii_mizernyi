@@ -1,0 +1,31 @@
+{
+  "builders": [
+    {
+      "type": "amazon-ebs",
+      "region": "{{user `region`}}",
+      "source_ami": "{{user `base_ami`}}",
+      "instance_type": "{{user `instance_size`}}",
+      "ami_name": "devops-hw4-app-ami",
+      "ami_description": "AMI for app server",
+      "ssh_username": "ubuntu",
+      "ssh_timeout": "20m",
+      "tags": {
+        "Project": "Devops_HW4",
+        "OS": "ubuntu_2204",
+        "BuiltBy": "Packer"
+      }
+    }],
+  "provisioners": [{
+      "type": "shell",
+      "inline": [
+        "sudo apt update",
+        "sudo apt upgrade -y",
+        "sudo apt update",
+        "sudo apt upgrade -y",
+        "sudo apt install -y python3-pip default-libmysqlclient-dev build-essential pkg-config awscli mariadb-client",
+        "git clone https://github.com/saaverdo/flask-alb-app -b orm",
+        "sudo pip install -r flask-alb-app/requirements.txt"
+      ]
+  }]
+}
+
